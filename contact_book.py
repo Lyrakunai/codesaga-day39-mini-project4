@@ -68,8 +68,9 @@ while  user != "exit":
     if user == "delete contact":
         found = False
         a = input("enter contact name:")
+        b = int(input("enter contact number:")
         for j in contacts_list:
-            if j["name"] == a:
+            if j["name"] == a and j["number"] == b:
                 contacts_list.remove(j)
                 print(contacts_list)
                 print("delete successfully")
