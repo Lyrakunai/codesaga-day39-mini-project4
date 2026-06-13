@@ -57,14 +57,16 @@ while user != "exit":
     if user == "view products":
         if products == []:
             print("No products avialable.")
-        for j in products:
-            print(j)
+        else:
+            j in products:
+                print(j)
 
     if user == "delete product":
         name = input("enter product name:")
         for j in products:
             if j["name"] == name:
                 products.remove(j)
+                print("Deleted successfully")
                 break
         else:
             print("Product not found.")
